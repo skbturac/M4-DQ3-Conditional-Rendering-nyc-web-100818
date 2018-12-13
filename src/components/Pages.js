@@ -57,7 +57,7 @@ export class Pokemon extends React.Component {
 
   getRandomPokemon = () => {
     const pokeId = Math.round(Math.random()*802)
-    fetch(`https://pokeapi.co/api/v2/pokemon/${pokeId}`)
+    fetch(`https://pokeapi.co/api/v2/pokemon/https://cors-anywhere.herokuapp.com/${pokeId}`)
       .then(res => res.json())
       .then(pokemon => this.setState({pokemon: pokemon}))
   }
